@@ -18,13 +18,13 @@ enum Colors {
 }
 
 class ViewController: UIViewController {
-
     
     @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var string = "Каждый охотник желает знать где сидит фазан"
+        let string = "Каждый охотник желает знать где сидит фазан"
         let words = string.components(separatedBy: " ")
         let attributedString = NSMutableAttributedString(string: string)
         
